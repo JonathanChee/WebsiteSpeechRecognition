@@ -1,0 +1,94 @@
+.mystyle{
+    height: 90px;
+    width: 200px;
+	color: white;
+	font-size: smaller;
+}
+.flip-container{
+    perspective: 1000px;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back{
+	/*height: 175px;
+    width: 274px;*/
+    height: 175px;
+	width: 274px;
+}
+.flipper{
+	transition: 2s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front,
+.back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back{
+    transform: rotateY(180deg);
+}
+footer{
+    background: rgb(69, 56, 146);
+    color: white;
+}
+.edit{
+    float: right;
+    padding-right: 10px;
+}
+
+.btn-primary{
+    background-color: black;
+}
+.jumbotron{
+    padding: 20px 10px 20px 10px
+    !important;
+}
+
+.pop{
+    width: 40px;
+    height: 40px
+}
+
+.srpop{
+    width: 40px;
+    height: 40px
+}
+
+.editpop{
+    width: 40px;
+    height: 40px
+}
+
+.footer-border-right {
+    border-right-style: solid;
+    border-right-color: blue;
+    border-right-width: thin;
+}
+
+/* The speech overlay style */
+.speech-overlay {
+    position: fixed;
+    top: 85%;
+    right: 2%;
+    font-size: 16px;
+    color: darkgoldenrod;
+    background-color: lightblue;
+    opacity: 0.90;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}

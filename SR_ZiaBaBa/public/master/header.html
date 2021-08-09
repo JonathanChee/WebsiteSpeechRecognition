@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <a class="navbar-brand" href="#"></a>
+    <img src="images/ZIABABA.png" width="100" height="60" class="d-inline-block align-top" alt="" onload="getLoginUsername()">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" ><i class="fa fa-fw fa-home"></i>Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-coffee"></i>Restaurant
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="restaurant.html" id="north" onclick="listNorth()">North Region</a>
+              <a class="dropdown-item" href="restaurant.html" id="south" onclick="listSouth()">South Region</a>
+              <a class="dropdown-item" href="restaurant.html" id="east" onclick="listEast()">East Region</a>
+              <a class="dropdown-item" href="restaurant.html" id="west" onclick="listWest()">West Region</a>
+              <a class="dropdown-item" href="restaurant.html" id="west" onclick="listCentral()">Central Region</a>
+              <a class="dropdown-item" href="restaurant.html" id="any" onclick="listAny()">Island Wide</a>
+            </div>
+        </li>
+
+        <li class="nav-item" id="contactus">
+          <a class="nav-link" href="./contactus.html" id="contactus">
+            <i class="fa fa-fw fa-phone"></i>Contact Us</a>
+        </li>
+        <li class="nav-item" id="aboutMenu">
+            <a class="nav-link" href="#" id="about" data-toggle="modal" data-target="#messageModal">
+              <i class="fa fa-fw fa-user-circle"></i>About Us</a>
+        </li>
+        <li class="nav-item" id="Login">
+            <a class="nav-link" href="#" id="login" data-toggle="modal" data-target="#myLoginModal">
+              <i class="fa fa-fw fa-sign-in"></i>Login</a>
+        </li>
+        <li class="nav-item" id="SignUp">
+          <a class="nav-link" href="#" id="signup" data-toggle="modal" data-target="#myRegisterModal">
+            <i class="fa fa-fw fa-user-plus"></i>Sign Up</a>
+        </li>
+      </ul>
+
+      <small><div class="nav-link text-light" id="loginusername"></div></small>
+      <button type="logout" class="btn btn-light" onclick="logoutFunction()"><small><i class="fa fa-fw fa-sign-out"></i>Logout</small></button>
+    </div>
+  </nav>
